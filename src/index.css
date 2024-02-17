@@ -1,0 +1,71 @@
+@layer base {
+  .font-primary {
+    font-family: 'YourPrimaryFont', sans-serif;
+    /* Add any additional styles as needed */
+  }
+
+  .font-secondary {
+    font-family: 'YourSecondaryFont', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    font-weight: normal;
+    color: #ffffff; /* Set the text color to white */
+  }
+
+  body {
+    @apply font-secondary;
+  }
+
+  .h2 {
+    font-family: 'YourPrimaryFont', sans-serif;
+    font-size: 32px;
+    margin-bottom: 6px;
+    letter-spacing: 10%;
+    text-transform: uppercase;
+  }
+
+  .h3 {
+    font-family: 'YourPrimaryFont', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    margin-bottom: 6px;
+    line-height: 46px;
+  }
+
+  .btn {
+    @apply rounded-full font-primary text-white font-medium;
+  }
+
+  .btn-sm {
+    @apply h-[48px] px-6 text-sm;
+  }
+
+  .btn-lg {
+    @apply h-[56px] px-10 text-base;
+  }
+
+  .btn-link {
+    @apply text-base;
+  }
+
+  .text-gradient {
+    background-color: #000000; /* Dark black background */
+    color: #ff66a2; /* Replace with the hex color for pink-500 */
+    font-weight: bold;
+    font-family: sans-serif;
+    /* Add hover styles if needed */
+  }
+  
+  
+  
+  
+  
+
+  .section {
+    @apply py-8 lg:py-24 lg:h-screen flex items-center;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
