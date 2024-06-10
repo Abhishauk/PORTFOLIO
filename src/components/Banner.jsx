@@ -5,20 +5,17 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import { Link } from "react-scroll";
 
-
 const Banner = () => {
   return (
-    <section
-      className="min-h-[85vh] lg:min-h-[78vh] flex flex-col items-center justify-center bg-light-border py-16 lg:py-24 px-4 lg:px-24"
-      id="home"
-    >
-      <div className="container mx-auto py-16 lg:py-24 px-4 lg:px-24">
+    <section className="min-h-[85vh] lg:min-h-[78vh] flex flex-col items-center justify-center bg-light-border py-6 lg:py-12 px-4 lg:px-24" id="home">
+      <div className="container mx-auto py-6 lg:py-12 px-4 lg:px-24 ">
         <div className="text-center font-secondary p-6 border-light-border rounded-lg">
           <motion.img
-            src="profilepic.jpg "// Set the source of your profile picture
+            src={require("../assets/avatar.jpg")}
             alt="Profile Picture"
             className="rounded-full w-32 h-32 lg:w-48 lg:h-48 mb-4 mx-auto"
           />
+
           <motion.h1
             variants={fadeIn("up", 0.3)}
             initial="hidden"
@@ -66,7 +63,7 @@ const Banner = () => {
             className="flex flex-col items-center mb-12 mx-auto lg:mx-0"
           >
             <div className="flex items-center gap-x-4">
-              {" "}{/* Updated this line */}
+              {" "}
               <button
                 type="button"
                 className="flex items-center text-pink-500 hover:text-white border border-white hover:pink-500 focus:ring-4 focus:outline-none focus:ring-pink-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-white dark:text-pink-500 dark:hover:text-white dark:hover:bg-pink-500 dark:focus:ring-pink-500"
