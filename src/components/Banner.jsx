@@ -83,9 +83,9 @@ const Banner = () => {
                 className="flex items-center justify-center text-pink-500 hover:text-white border border-pink-500 hover:pink-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-pink-500 dark:text-pink-500 dark:hover:text-white dark:hover:bg-pink-500 dark:focus:ring-pink-500"
               >
                 <a
-                  href="/Resume.pdf"
+                  href="/Abhisha-uk.pdf"
                   className="cursor-pointer text-white font-secondary"
-                  download="Resume.pdf"
+                  download="Abhisha-uk.pdf"
                 >
                   Resume
                 </a>
