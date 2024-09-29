@@ -87,7 +87,7 @@ const Banner = () => {
                 <a
                   href="/AbhishaUK.pdf"
                   className="cursor-pointer text-white font-secondary"
-                  download="Abhisha-uk.pdf"
+                  download="AbhishaUK.pdf"
                 >
                   Resume
                 </a>
