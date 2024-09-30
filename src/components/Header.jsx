@@ -13,7 +13,7 @@ const Header = () => {
       <div className="container mx-auto px-20">
         <div className="flex justify-between items-center">
           {/* Responsive navigation menu for smaller screens */}
-          <div className="sm:hidden">
+          <div className="sm:hidden ">
             <button
               className="text-white cursor-pointer focus:outline-none"
               onClick={handleMenuToggle}

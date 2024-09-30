@@ -11,7 +11,7 @@ import Img3 from "../assets/portfolio-img3.jpg";
 const Work = () => {
   return (
     <section className="section md:pt-96 lg:mt-96 xl:mt-0" id="work">
-      <div className="container mx-auto px-20">
+      <div className="container mx-auto px-4 md:px-9 lg:px-20">
         <div className="flex flex-col lg:flex-row gap-x-10 lg:mt-16">
           <motion.div
             variants={fadeIn("right", 0.3)}

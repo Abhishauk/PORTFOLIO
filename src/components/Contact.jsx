@@ -27,7 +27,7 @@ const Contact = () => {
     });
     setErrorMessages({
       ...errorMessages,
-      [name]: "" // Clear the error message when the user starts typing
+      [name]: "" 
     });
   };
 
@@ -86,7 +86,7 @@ const Contact = () => {
 
   return (
     <section className="mt-20 lg:mt-96 py-96 lg:section " id="contact">
-      <div className="container mx-auto px-20">
+      <div className="container mx-auto px-4 md:px-9 lg:px-20">
         <div className="flex flex-col lg:flex-row">
           {/* text */}
           <motion.div
