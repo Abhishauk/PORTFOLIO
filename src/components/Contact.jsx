@@ -156,13 +156,13 @@ const Contact = () => {
       
       {/* Popup Message */}
       {showPopup && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white p-6 rounded shadow-lg">
+        <div className="fixed inset-0 flex items-center justify-center bg-slate-600 bg-opacity-50">
+          <div className="bg-black p-6 rounded shadow-lg">
             <h2 className="text-lg font-bold">Thank You!</h2>
             <p>I will get back to you soon.</p>
             <button 
               onClick={closePopup} 
-              className="mt-4 text-blue-500 hover:underline"
+              className="mt-4 text-white hover:underline"
             >
               Close
             </button>
