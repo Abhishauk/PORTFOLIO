@@ -55,7 +55,7 @@ const Contact = () => {
         user_id
       );
 
-      console.log("EmailJS Response:", response);
+      
 
       if (response && response.status === 200) {
         // Show the popup message
@@ -85,8 +85,8 @@ const Contact = () => {
   };
 
   return (
-    <section className="mt-20 lg:mt-96 py-96 lg:section" id="contact">
-      <div className="container mx-auto">
+    <section className="mt-20 lg:mt-96 py-96 lg:section " id="contact">
+      <div className="container mx-auto px-20">
         <div className="flex flex-col lg:flex-row">
           {/* text */}
           <motion.div

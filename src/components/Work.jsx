@@ -11,7 +11,7 @@ import Img3 from "../assets/portfolio-img3.jpg";
 const Work = () => {
   return (
     <section className="section md:pt-96 lg:mt-96 xl:mt-0" id="work">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-20">
         <div className="flex flex-col lg:flex-row gap-x-10 lg:mt-16">
           <motion.div
             variants={fadeIn("right", 0.3)}
@@ -22,11 +22,10 @@ const Work = () => {
           >
             {/* text */}
             <div className="">
-              <h2 className="h2 leading-tight text-accent ">
-              Projects
-              </h2>
+              <h2 className="h2 leading-tight text-accent ">Projects</h2>
               <p className="max-w-sm mb-10 text-white">
-              I have worked on many projects over the course of being a web Developer, here are a few of my live, real-world projects.
+                I have worked on many projects over the course of being a web
+                Developer, here are a few of my live, real-world projects.
               </p>
               <button className="btn btn-sm">View all projects</button>
             </div>
@@ -34,7 +33,7 @@ const Work = () => {
             {/* image */}
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl ">
               {/* overlays */}
-              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300" />
               {/* img */}
               <img
                 src={Img1}
@@ -48,7 +47,6 @@ const Work = () => {
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
                 <span className="text-3xl text-white">ZAZZLE</span>
-                
               </div>
             </div>
           </motion.div>
@@ -62,7 +60,7 @@ const Work = () => {
             {/* image */}
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl ">
               {/* overlays */}
-              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300" />
               {/* img */}
               <img
                 src={Img2}
@@ -81,7 +79,7 @@ const Work = () => {
             {/* image */}
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl ">
               {/* overlays */}
-              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300" />
               {/* img */}
               <img
                 src={Img3}

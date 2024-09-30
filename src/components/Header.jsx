@@ -1,6 +1,5 @@
-
-import React, { useState } from 'react';
-import { Link } from 'react-scroll';
+import React, { useState } from "react";
+import { Link } from "react-scroll";
 
 const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -10,11 +9,9 @@ const Header = () => {
   };
 
   return (
-    <header className='fixed top-0 left-0 right-0 text-gradient shadow-md py-2 z-50 shadow-slate-800'>
-      <div className='container mx-auto'>
-        <div className='flex justify-between items-center'>
-    
-
+    <header className="fixed top-0 left-0 right-0 text-gradient shadow-md py-2 z-50 shadow-slate-800">
+      <div className="container mx-auto px-20">
+        <div className="flex justify-between items-center">
           {/* Responsive navigation menu for smaller screens */}
           <div className="sm:hidden">
             <button
@@ -33,10 +30,10 @@ const Header = () => {
                   strokeLinejoin="round"
                   strokeWidth="2"
                   d="M4 6h16M4 12h16m-7 6h7"
-                ></path>
+                />
               </svg>
             </button>
-            {isMenuOpen && (
+            {isMenuOpen &&
               <div className="absolute top-10 left-0 bg-black text-white p-5 shadow-md px-10">
                 <div className="flex flex-col space-y-2">
                   <Link
@@ -67,7 +64,7 @@ const Header = () => {
                   >
                     SKILLS
                   </Link>
-              
+
                   <Link
                     to="work"
                     activeClass="active"
@@ -87,8 +84,7 @@ const Header = () => {
                     CONTACT
                   </Link>
                 </div>
-              </div>
-            )}
+              </div>}
           </div>
 
           {/* Navigation for larger screens */}
@@ -121,7 +117,7 @@ const Header = () => {
             >
               SKILLS
             </Link>
-        
+
             <Link
               to="work"
               activeClass="active"
@@ -143,10 +139,20 @@ const Header = () => {
           </div>
 
           {/* Spacer for larger screens */}
-          <div className="hidden sm:block w-8"></div>
+          <div className="hidden sm:block w-8" />
 
           {/* Button for larger screens */}
-          <button className='hidden sm:block btn btn-sm'>WORK WITH ME</button>
+          <button className="hidden sm:block btn btn-sm text-pink-500 hover:text-white border border-pink-500 hover:bg-pink-500 focus:bg-pink-500 focus:text-white focus:outline-none focus:ring-0 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-pink-500 dark:text-pink-500 dark:focus:text-white">
+          <Link
+                    to="contact"
+                    activeClass="active"
+                    smooth={true}
+                    spy={true}
+                    onClick={handleMenuToggle}
+                  >
+            WORK WITH ME
+            </Link>
+          </button>
         </div>
       </div>
     </header>

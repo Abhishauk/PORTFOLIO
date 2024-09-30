@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="bg-site bg-norepeat bg-cover overflow-hidden text-gradient">
+    <div className="bg-site bg-norepeat bg-cover overflow-hidden text-gradient ">
       <Header />
       <Banner />
       <About />
