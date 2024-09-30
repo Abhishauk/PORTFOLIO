@@ -142,15 +142,15 @@ const Header = () => {
           <div className="hidden sm:block w-8" />
 
           {/* Button for larger screens */}
-          <button className="hidden sm:block btn btn-sm text-pink-500 hover:text-white border border-pink-500 hover:bg-pink-500 focus:bg-pink-500 focus:text-white focus:outline-none focus:ring-0 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-pink-500 dark:text-pink-500 dark:focus:text-white">
-          <Link
-                    to="contact"
-                    activeClass="active"
-                    smooth={true}
-                    spy={true}
-                    onClick={handleMenuToggle}
-                  >
-            WORK WITH ME
+          <button className="hidden sm:block btn btn-sm text-white hover:text-white border border-pink-500 hover:bg-pink-500 focus:bg-pink-500 focus:text-white focus:outline-none focus:ring-0 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-pink-500 dark:text-white dark:focus:text-white">
+            <Link
+              to="contact"
+              activeClass="active"
+              smooth={true}
+              spy={true}
+              onClick={handleMenuToggle}
+            >
+              WORK WITH ME
             </Link>
           </button>
         </div>
